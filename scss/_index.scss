@@ -1,0 +1,49 @@
+.presentacion{
+    display: grid;
+    grid-template-rows: 20% 80%;
+    width: 100%;
+    height: 700px;
+    padding: 50px 0px;
+    margin-bottom: 100px;
+    
+    .frase{
+        align-self: center;
+        justify-self: center;
+        width: 55%;
+    }
+    .frase h1{ 
+        font-family: 'Montserrat', sans-serif;
+        font-size: 35px;
+        text-align: center;
+        padding-bottom: 20px;
+        color: white;
+    }
+}
+    @media only screen and (min-width:859px){
+        .presentacion{
+            .slide{
+                margin: 15px 40px;
+            }
+            .slide img{
+                border-radius: 10px;
+            }
+            .img-mobile{
+                display: none;
+            }
+        }
+    }
+    @media only screen and (max-width:858px){
+        .presentacion{
+            margin-top: 100px;
+            .slide{
+                display: none;
+            }
+            .img-mobile{
+                display: block;
+                width: 90%;
+                height: 500px;
+                margin: 70px auto 0px auto;
+                border-radius: 10px;
+            }
+        }
+    }

@@ -1,0 +1,55 @@
+$color-secundario:#c9f5da;
+.tipsmateros{
+    align-items: center;
+    text-align: center;
+    margin-bottom: 25px;
+    color: white;
+
+    h1{
+        padding-top: 20px;
+        font-family: 'Tilt Neon', cursive;
+        font-size: 70px;
+    }
+}
+.subtips{
+    border: double white 5px;
+    border-radius: 20px;
+    margin: 10px;
+    width: 380px;
+    height: 680px;
+    padding-bottom: 15px;
+    color: white;
+    h2{
+        text-align: center;
+        padding-top: 15px;
+    }
+    ol li{
+        width: 280px;
+        text-align: justify;
+        padding: 10px 0px;
+    }
+    a{
+        color: $color-secundario;
+        text-align: center;
+        &:hover{
+            color: white;
+        }
+    }
+    
+    .tutorial1{
+        padding-bottom: 40px;
+    }
+    .tutorial2{
+        padding-bottom: 70px;
+    }
+
+}
+@media only screen and (max-width:480px){
+    .subtips {
+        margin-left: 30px;
+        width: 320px;
+    }
+    .subtips ol li{
+        width: 230px;
+    }
+}

@@ -1,0 +1,96 @@
+$color-principal:#294936;
+$color-secundario:#c9f5da;
+header{
+    height: 150px;
+}
+nav{
+    height: 150px;
+    .enlace{
+        position: absolute;
+        padding: 5px;
+    }
+    .logo{
+        height: 180px;
+        line-height: 150px;
+    }
+    ul{
+        float: right;
+        margin-right: 15px;
+    }
+    a{
+        text-decoration: none;
+    }
+    ul li{
+        display: inline-block;
+        margin: 0 5px;
+        line-height: 150px;
+    }
+    ul li a{
+        color: white;
+        font-size: 18px;
+        padding: 7px 13px;
+        border-radius: 30px;
+        font-weight: 700;
+    }
+    ul li a:hover{
+        background: $color-principal;
+        transition: .1s;
+        color: white; 
+    }
+    .checkbtn{
+        font-size: 30px;
+        color: black;
+        float: right;
+        line-height: 120px;
+        margin-right: 40px;
+        display: none;
+    }
+    #check{
+        display: none;
+    }
+}
+@media only screen and (max-width: 952px){
+    nav{
+        .enlace{
+            padding-left: 20px;
+        }
+        ul li a{
+            font-size: 16px;
+        }
+    }
+}
+@media only screen and (max-width: 858px){
+    nav{
+        .checkbtn{
+            display: block;
+            color: white;         
+        }
+        ul{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: $color-secundario;
+            top: 80px;
+            left: -100%;
+            text-align: center;
+            transition: all .2s;
+        }
+        ul li{
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+        ul li a{
+            font-size: 15px;
+            text-decoration: none;
+            color: black;
+        }
+        li a:hover{
+            background: none;
+            color: white;
+        }
+        #check:checked ~ ul{
+            left:0;
+        }
+    }
+}
